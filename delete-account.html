@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion - EduARTs SRS</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --accent: #F97316;
+      --danger: #DC2626;
+      --danger-bg: #FEF2F2;
+      --danger-border: #FCA5A5;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 28px;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 28px;
+      font-size: 20px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 17px;
+      margin-top: 20px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 16px;
+      color: var(--text);
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .effective-date {
+      color: #6B7280;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .alert-box {
+      background: var(--danger-bg);
+      border-left: 4px solid var(--danger);
+      border-top: 1px solid var(--danger-border);
+      border-right: 1px solid var(--danger-border);
+      border-bottom: 1px solid var(--danger-border);
+      padding: 16px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .alert-box strong {
+      color: var(--danger);
+    }
+    .info-box {
+      background: #F0FDF4;
+      border-left: 4px solid #16A34A;
+      padding: 16px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .step-card {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+    .button-link {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    .button-link:hover {
+      background-color: #1E40AF;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: #6B7280;
+      text-align: center;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">EduARTs SRS — Teacher OS</span>
+    <h1>Account Deletion & Data Removal</h1>
+    <div class="effective-date">Effective Date: September 2026</div>
+
+    <div class="alert-box">
+      <strong>Delete Account / Account Deletion:</strong> Educators registered with EduARTs SRS have the right to request account deletion at any time. This page explains how to initiate an account deletion request and accurately details current deletion and deactivation behavior.
+    </div>
+
+    <h2>1. How to Request Account Deletion</h2>
+    <p>You can initiate an account deletion request through either of the two pathways below. <strong>You do not need the app installed to request deletion.</strong></p>
+
+    <div class="step-card">
+      <h3>Method A: In-App Deletion (Within installed app)</h3>
+      <p>If you currently have the EduARTs app installed on your Android device:</p>
+      <ol>
+        <li>Open the <strong>EduARTs</strong> app and log in to your account.</li>
+        <li>Tap <strong>ക്രമീകരണങ്ങൾ (Settings)</strong> from the navigation menu.</li>
+        <li>Scroll to the <strong>മറ്റുള്ളവ (Others)</strong> section and tap <strong>അക്കൗണ്ട് സുരക്ഷ (Account Security)</strong>.</li>
+        <li>Select <strong>Delete Account</strong> (marked in red).</li>
+        <li>Type <code>DELETE</code> in uppercase in the confirmation field.</li>
+        <li>Enter your account password to authenticate your identity.</li>
+        <li>Tap <strong>Delete Account</strong>. The system verifies your password and DELETE confirmation, records the deletion request, changes the account status to <code>PENDING_DELETION</code>, revokes active sessions across all devices, blocks normal account access/login, and clears local user data from your device during client teardown.</li>
+      </ol>
+    </div>
+
+    <div class="step-card">
+      <h3>Method B: External Web Deletion Request (App NOT required)</h3>
+      <p>If you have uninstalled the app, lost access to your device, or prefer to request deletion via web:</p>
+      <ol>
+        <li>Send an email to our official contact at: <a href="mailto:eduartstech@gmail.com?subject=Account%20Deletion%20Request%20-%20EduARTs&body=Please%20delete%20my%20EduARTs%20account%20and%20all%20associated%20data.%0A%0AFull%20Name:%20%0ARegistered%20Email:%20%0ASchool%20Name:%20">eduartstech@gmail.com</a></li>
+        <li>Use the email subject: <strong>Account Deletion Request - EduARTs</strong></li>
+        <li>Send the email from your <strong>registered EduARTs email address</strong>.</li>
+        <li>Include the following verification details in your message:
+          <ul>
+            <li>Full Name</li>
+            <li>Registered Email Address</li>
+            <li>Associated School Name (if previously provided)</li>
+          </ul>
+        </li>
+        <li>Our support team will verify account ownership and process the deletion request.</li>
+      </ol>
+      <a class="button-link" href="mailto:eduartstech@gmail.com?subject=Account%20Deletion%20Request%20-%20EduARTs&body=Please%20delete%20my%20EduARTs%20account%20and%20all%20associated%20data.%0A%0AFull%20Name:%20%0ARegistered%20Email:%20%0ASchool%20Name:%20">Send Deletion Request Email</a>
+    </div>
+
+    <h2>2. Current Account Deletion Behavior</h2>
+    <p>When an authenticated account deletion request is processed:</p>
+    <ul>
+      <li><strong>Identity & Password Verification:</strong> The server verifies the educator's current password and requires the confirmation text <code>DELETE</code>.</li>
+      <li><strong>Account Status Updated:</strong> The account status in the database is changed to <code>PENDING_DELETION</code>, and the deletion request timestamp is recorded.</li>
+      <li><strong>Session Revocation:</strong> All active session tokens across all devices are immediately revoked (<code>is_revoked = true</code>), preventing any future token refresh or API operations.</li>
+      <li><strong>Access Blocked:</strong> Normal account access and login are blocked once the account is in pending deletion status.</li>
+      <li><strong>Client Teardown:</strong> During in-app deletion, the application immediately purges local authentication tokens from secure storage and clears all local SQLite application data on the device.</li>
+      <li><strong>Backend Data:</strong> The account remains in a deactivated <code>PENDING_DELETION</code> status on the backend server. Server records are not permanently purged at this stage because no automated final purge mechanism currently exists in the system.</li>
+    </ul>
+
+    <div class="info-box">
+      <strong>Student Data:</strong> EduARTs is primarily designed for educators. When the shared interactive quiz feature is used, the system collects student name, student class/grade, quiz answers, and score/result solely to record the quiz attempt and make results available to the assigning teacher.
+    </div>
+
+    <h2>3. Data Deactivation & Storage Disclosures</h2>
+    <p>In accordance with our current system implementation:</p>
+    <ul>
+      <li><strong>Immediate Access Termination:</strong> As soon as deletion is submitted, all active device sessions are invalidated and the account status transitions to <code>PENDING_DELETION</code>. Subsequent login attempts are blocked.</li>
+      <li><strong>Local Data Removal:</strong> In-app deletion executes an immediate local data teardown on the device, clearing local database tables and stored credentials.</li>
+      <li><strong>Deactivated Status:</strong> The account record remains marked as <code>PENDING_DELETION</code> on the server to prevent reuse or unauthorized re-registration while maintaining system integrity.</li>
+    </ul>
+
+    <h2>4. Questions & Support</h2>
+    <p>For any questions or assistance regarding your account or deletion request, please reach out to:</p>
+    <p>
+      <strong>EduARTs Tech Team</strong><br>
+      Email: <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a><br>
+      Website: <a href="https://eduartstech.github.io/eduarts-ai/">https://eduartstech.github.io/eduarts-ai/</a>
+    </p>
+
+    <footer>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> &bull;
+        <a href="https://eduartstech.github.io/eduarts-ai/">EduARTs Portal</a>
+      </p>
+      <p>&copy; 2026 EduARTs Tech. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

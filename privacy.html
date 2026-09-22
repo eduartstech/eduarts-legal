@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - EduARTs SRS</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --accent: #F97316;
+      --text: #1F2937;
+      --bg: #F9FAFB;
+      --card: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 28px;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 28px;
+      font-size: 20px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+    p, li {
+      font-size: 16px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .effective-date {
+      color: #6B7280;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .highlight-box {
+      background: #FFF7ED;
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: #6B7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">EduARTs SRS</span>
+    <h1>Privacy Policy</h1>
+    <div class="effective-date">Effective Date: September 2026</div>
+
+    <p>Welcome to <strong>EduARTs SRS</strong> ("EduARTs", "we", "our", or "us"). We provide an AI-powered teaching manual, celebration poster design, timetable management, and offline synchronization platform designed primarily for educators. We are committed to protecting user privacy and ensuring transparency in all our data handling practices.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>EduARTs collects information necessary to provide smart teaching assistance and interactive educational tools:</p>
+    <ul>
+      <li><strong>Teacher Account Information:</strong> Full name, professional email address, and securely hashed authentication credentials.</li>
+      <li><strong>Teaching Profile & Preferences:</strong> Associated school name, district, syllabus type, assigned classes (e.g. Class 1–10), subjects taught, and medium of instruction.</li>
+      <li><strong>Curriculum & Timetable Data:</strong> Weekly timetable periods, custom lesson notes, and teaching progress logs created by the teacher.</li>
+      <li><strong>Authentication & Session Security Data:</strong> Device name, IP address, and session activity timestamps recorded during sign-in and token operations to maintain account security and multi-device session management.</li>
+      <li><strong>Shared Interactive Quiz Data:</strong> When an educator uses the shared interactive quiz feature, the web quiz interface collects the student name, student class/grade, quiz answers, and score/result so the quiz attempt can be recorded and made available to the assigning teacher.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>Student Data:</strong> EduARTs is primarily designed for educators. When the shared interactive quiz feature is used, the system collects student name, student class/grade, quiz answers, and score/result solely to submit the quiz attempt and make results available to the assigning teacher. EduARTs does not collect student emails, phone numbers, or advertising identifiers.
+    </div>
+
+    <h2>2. How We Use Information</h2>
+    <p>Collected information is used solely for:</p>
+    <ul>
+      <li>Authenticating educators and managing multi-device session security.</li>
+      <li>Synthesizing personalized teaching manuals, worksheets, and classroom activities matching the teacher's specific class syllabus.</li>
+      <li>Submitting quiz attempts and displaying student quiz results to the assigning teacher.</li>
+      <li>Offline-first data caching and seamless cloud synchronization when internet connectivity is available.</li>
+      <li>Sending scheduled daily teaching reminders (at 07:00 AM) configured by the teacher.</li>
+    </ul>
+
+    <h2>3. Artificial Intelligence & Data Safety</h2>
+    <p>EduARTs utilizes generative AI (Google Gemini API) to generate lesson plans, worksheets, and classroom activities. Prompts transmitted to the AI engine contain curriculum syllabus topics, grade standards, subjects, languages, and curriculum/event descriptors only. <strong>Teacher personal details and student identities are never sent to the AI service, and we do not use personal data to train public AI models.</strong></p>
+
+    <h2>4. Data Storage & Security</h2>
+    <p>We implement appropriate technical measures to protect user data:</p>
+    <ul>
+      <li><strong>In Transit:</strong> Communications between the client application and backend servers use HTTPS/TLS encryption in transit.</li>
+      <li><strong>At Rest / Local Storage:</strong> Authentication tokens are stored using the app's secure storage mechanism. Offline and cached local application data is stored inside the application's private storage area.</li>
+    </ul>
+
+    <h2>5. User Rights & Account Deletion</h2>
+    <p>Educators retain control over their data:</p>
+    <ul>
+      <li><strong>Access & Modification:</strong> You may review and update your profile, school, and timetable preferences anytime via App Settings.</li>
+      <li><strong>In-App Account Deletion:</strong> You can initiate an account deletion request at any time from within the app by navigating to <strong>Settings &rarr; Account Security &rarr; Delete Account</strong>. An authenticated request (verified with your password and DELETE confirmation) changes the account status to <code>PENDING_DELETION</code>, records the deletion request, revokes active sessions across all devices, blocks normal account access/login, and clears local user data from the device during client teardown.</li>
+      <li><strong>Web-Based Account Deletion Request:</strong> If you have uninstalled the app or do not have access to your device, you can submit an account deletion request via email to our official contact at <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a> or visit our <a href="delete-account.html">Account Deletion page</a>.</li>
+    </ul>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or requests regarding this Privacy Policy or your data, please contact us at:</p>
+    <p>
+      <strong>EduARTs Tech Team</strong><br>
+      Email: <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a><br>
+      Website: <a href="https://eduartstech.github.io/eduarts-ai/">https://eduartstech.github.io/eduarts-ai/</a>
+    </p>
+
+    <footer>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> &bull;
+        <a href="delete-account.html">Account Deletion</a> &bull;
+        <a href="https://eduartstech.github.io/eduarts-ai/">EduARTs Portal</a>
+      </p>
+      <p>&copy; 2026 EduARTs Tech. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
