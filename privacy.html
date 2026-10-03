@@ -3,146 +3,484 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - EduARTs SRS</title>
+  <title>Master Privacy Policy — EduARTs Ecosystem</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
+  <meta name="description" content="Master Privacy Policy for the EduARTs ecosystem, including EduARTs Teacher OS, EduARTs Academy, AI Training Programs, online courses, websites, Meta lead forms, and communication channels.">
   <style>
     :root {
       --primary: #1E3A8A;
+      --primary-dark: #172554;
+      --primary-light: #EFF6FF;
       --accent: #F97316;
+      --accent-light: #FFF7ED;
       --text: #1F2937;
+      --text-muted: #4B5563;
       --bg: #F9FAFB;
       --card: #FFFFFF;
       --border: #E5E7EB;
+      --success: #16A34A;
+      --success-bg: #F0FDF4;
+    }
+    * {
+      box-sizing: border-box;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
       color: var(--text);
       background-color: var(--bg);
       margin: 0;
       padding: 24px 16px;
     }
     .container {
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto;
       background: var(--card);
       padding: 40px;
       border-radius: 12px;
       border: 1px solid var(--border);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
     h1 {
       color: var(--primary);
-      margin-top: 0;
-      font-size: 28px;
+      margin-top: 4px;
+      font-size: 30px;
+      line-height: 1.25;
+      font-weight: 800;
     }
     h2 {
       color: var(--primary);
-      margin-top: 28px;
-      font-size: 20px;
+      margin-top: 36px;
+      font-size: 21px;
       border-bottom: 2px solid var(--border);
       padding-bottom: 8px;
     }
-    p, li {
-      font-size: 16px;
+    h3 {
+      color: var(--text);
+      font-size: 17px;
+      margin-top: 20px;
+      margin-bottom: 6px;
     }
-    ul {
+    p, li {
+      font-size: 15.5px;
+      color: var(--text);
+    }
+    ul, ol {
       padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
     }
     .badge {
       display: inline-block;
-      background: #EFF6FF;
+      background: var(--primary-light);
       color: var(--primary);
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 9999px;
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 16px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
     }
     .effective-date {
       color: #6B7280;
       font-size: 14px;
       margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
     }
-    .highlight-box {
-      background: #FFF7ED;
+    .callout {
+      background: var(--accent-light);
       border-left: 4px solid var(--accent);
-      padding: 16px;
+      padding: 16px 18px;
       border-radius: 4px;
-      margin: 20px 0;
+      margin: 22px 0;
+    }
+    .callout strong {
+      color: #9A3412;
+    }
+    .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+    .success-card {
+      background: var(--success-bg);
+      border-left: 4px solid var(--success);
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 18px 0;
+    }
+    .toc {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 24px 0 32px;
+    }
+    .toc-title {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .toc li {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .toc a:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 14.5px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #F1F5F9;
+      color: var(--primary);
+      font-weight: 700;
     }
     footer {
-      margin-top: 40px;
-      padding-top: 20px;
+      margin-top: 48px;
+      padding-top: 24px;
       border-top: 1px solid var(--border);
       font-size: 14px;
       color: #6B7280;
       text-align: center;
     }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 19px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <span class="badge">EduARTs SRS</span>
-    <h1>Privacy Policy</h1>
-    <div class="effective-date">Effective Date: September 2026</div>
-
-    <p>Welcome to <strong>EduARTs SRS</strong> ("EduARTs", "we", "our", or "us"). We provide an AI-powered teaching manual, celebration poster design, timetable management, and offline synchronization platform designed primarily for educators. We are committed to protecting user privacy and ensuring transparency in all our data handling practices.</p>
-
-    <h2>1. Information We Collect</h2>
-    <p>EduARTs collects information necessary to provide smart teaching assistance and interactive educational tools:</p>
-    <ul>
-      <li><strong>Teacher Account Information:</strong> Full name, professional email address, and securely hashed authentication credentials.</li>
-      <li><strong>Teaching Profile & Preferences:</strong> Associated school name, district, syllabus type, assigned classes (e.g. Class 1–10), subjects taught, and medium of instruction.</li>
-      <li><strong>Curriculum & Timetable Data:</strong> Weekly timetable periods, custom lesson notes, and teaching progress logs created by the teacher.</li>
-      <li><strong>Authentication & Session Security Data:</strong> Device name, IP address, and session activity timestamps recorded during sign-in and token operations to maintain account security and multi-device session management.</li>
-      <li><strong>Shared Interactive Quiz Data:</strong> When an educator uses the shared interactive quiz feature, the web quiz interface collects the student name, student class/grade, quiz answers, and score/result so the quiz attempt can be recorded and made available to the assigning teacher.</li>
-    </ul>
-
-    <div class="highlight-box">
-      <strong>Student Data:</strong> EduARTs is primarily designed for educators. When the shared interactive quiz feature is used, the system collects student name, student class/grade, quiz answers, and score/result solely to submit the quiz attempt and make results available to the assigning teacher. EduARTs does not collect student emails, phone numbers, or advertising identifiers.
+    <span class="badge">EduARTs Master Privacy Policy</span>
+    <h1>Master Privacy Policy — EduARTs Ecosystem</h1>
+    <div class="effective-date">
+      <strong>Effective Date:</strong> October 2026 &bull; 
+      <strong>Applies to:</strong> EduARTs Teacher OS, EduARTs Academy, AI Training Programs, Online Courses, Websites, Meta Lead Forms, and Communication Channels
     </div>
 
-    <h2>2. How We Use Information</h2>
-    <p>Collected information is used solely for:</p>
+    <p>Welcome to <strong>EduARTs</strong> ("EduARTs", "we", "our", or "us"). We develop innovative educational technology, AI training programs, teacher productivity platforms, and interactive learning ecosystems primarily designed for educators, school teachers, and adult professional learners. We are committed to safeguarding personal privacy and maintaining complete transparency regarding how data is collected, used, processed, and protected.</p>
+
+    <div class="callout">
+      <strong>Single Master Privacy Policy:</strong> This policy serves as the official, unified Master Privacy Policy across the entire EduARTs ecosystem. It governs your interactions with our mobile applications, web portals, training programs, advertisements, lead generation forms, WhatsApp channels, and support services.
+    </div>
+
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <ol>
+        <li><a href="#section-scope">Scope of This Master Privacy Policy</a></li>
+        <li><a href="#section-information-we-collect">Information We Collect</a></li>
+        <li><a href="#section-meta-lead-ads">Meta (Facebook & Instagram) Lead Forms & Advertising</a></li>
+        <li><a href="#section-whatsapp-messaging">WhatsApp Enquiries, Communication & Automated Messaging</a></li>
+        <li><a href="#section-how-we-use-information">How We Use Information</a></li>
+        <li><a href="#section-payment-disclosures">Payment & Financial Information Disclosures</a></li>
+        <li><a href="#section-ai-safety">Artificial Intelligence & Data Safety (Google Gemini)</a></li>
+        <li><a href="#section-student-data">Student Data Isolation & Classroom Quiz Disclosures</a></li>
+        <li><a href="#section-service-providers">Service Providers & Third-Party Processors</a></li>
+        <li><a href="#section-data-security-storage">Data Storage, Offline Caching & Technical Security</a></li>
+        <li><a href="#section-retention-deletion">Data Retention & Deletion Policy</a></li>
+        <li><a href="#section-account-deletion">Account Deletion for EduARTs Teacher OS (In-App & Web)</a></li>
+        <li><a href="#section-user-rights">User Privacy Rights & Choices</a></li>
+        <li><a href="#section-contact">Grievance Officer & Contact Information</a></li>
+      </ol>
+    </div>
+
+    <!-- 1. Scope -->
+    <h2 id="section-scope">1. Scope of This Master Privacy Policy</h2>
+    <p>This Master Privacy Policy applies to all personal information collected or processed by EduARTs through any of the following touchpoints:</p>
     <ul>
-      <li>Authenticating educators and managing multi-device session security.</li>
-      <li>Synthesizing personalized teaching manuals, worksheets, and classroom activities matching the teacher's specific class syllabus.</li>
-      <li>Submitting quiz attempts and displaying student quiz results to the assigning teacher.</li>
-      <li>Offline-first data caching and seamless cloud synchronization when internet connectivity is available.</li>
-      <li>Sending scheduled daily teaching reminders (at 07:00 AM) configured by the teacher.</li>
+      <li><strong>EduARTs Teacher OS Mobile & Desktop Applications:</strong> Our flagship cross-platform application for teaching manuals, daily lesson schemes, period timetables, celebration poster generation, and offline teaching tools.</li>
+      <li><strong>EduARTs Academy & Online Learning Platforms:</strong> Our web-based educational portals (<a href="https://eduarts.tech">https://eduarts.tech</a>, Academy web portals, and associated subdomains) providing video lessons, live classes, course materials, assignments, and certificates.</li>
+      <li><strong>EduARTs AI Training Programs & Courses:</strong> Practical AI workshops, professional development programs, K-TET preparation modules, and pedagogy masterclasses.</li>
+      <li><strong>Course Registrations & Consultation Enquiries:</strong> Online or offline registration forms, syllabus downloads, program enquiry forms, and admission requests.</li>
+      <li><strong>Meta Platforms (Facebook & Instagram) Advertising & Lead Generation:</strong> Instant Forms, Lead Ads, event registration prompts, and promotional campaigns operated by EduARTs across Meta platforms.</li>
+      <li><strong>Communication Channels & Messaging:</strong> Direct interactions via telephone, SMS, WhatsApp Business, automated messaging workflows, and email customer support.</li>
     </ul>
 
-    <h2>3. Artificial Intelligence & Data Safety</h2>
-    <p>EduARTs utilizes generative AI (Google Gemini API) to generate lesson plans, worksheets, and classroom activities. Prompts transmitted to the AI engine contain curriculum syllabus topics, grade standards, subjects, languages, and curriculum/event descriptors only. <strong>Teacher personal details and student identities are never sent to the AI service, and we do not use personal data to train public AI models.</strong></p>
+    <!-- 2. Information We Collect -->
+    <h2 id="section-information-we-collect">2. Information We Collect</h2>
+    <p>Depending on how you interact with the EduARTs ecosystem, we collect the following categories of information:</p>
 
-    <h2>4. Data Storage & Security</h2>
-    <p>We implement appropriate technical measures to protect user data:</p>
+    <h3>A. Contact & Identity Information</h3>
     <ul>
-      <li><strong>In Transit:</strong> Communications between the client application and backend servers use HTTPS/TLS encryption in transit.</li>
-      <li><strong>At Rest / Local Storage:</strong> Authentication tokens are stored using the app's secure storage mechanism. Offline and cached local application data is stored inside the application's private storage area.</li>
+      <li><strong>Full Name:</strong> To identify you in course records, certificates, teacher accounts, and communications.</li>
+      <li><strong>Phone / WhatsApp Number:</strong> To answer course enquiries, send admission updates, deliver registration links, provide customer support, and transmit important notifications.</li>
+      <li><strong>Email Address:</strong> Used for account sign-in, password authentication, sending purchase confirmations, syllabus materials, and official announcements.</li>
+      <li><strong>City, District, and State:</strong> To customize curriculum suggestions (e.g., Kerala SCERT, CBSE, NCERT) and schedule convenient program timings.</li>
     </ul>
 
-    <h2>5. User Rights & Account Deletion</h2>
-    <p>Educators retain control over their data:</p>
+    <h3>B. Course Enquiries & Lead Information</h3>
     <ul>
-      <li><strong>Access & Modification:</strong> You may review and update your profile, school, and timetable preferences anytime via App Settings.</li>
-      <li><strong>In-App Account Deletion:</strong> You can initiate an account deletion request at any time from within the app by navigating to <strong>Settings &rarr; Account Security &rarr; Delete Account</strong>. An authenticated request (verified with your password and DELETE confirmation) changes the account status to <code>PENDING_DELETION</code>, records the deletion request, revokes active sessions across all devices, blocks normal account access/login, and clears local user data from the device during client teardown.</li>
-      <li><strong>Web-Based Account Deletion Request:</strong> If you have uninstalled the app or do not have access to your device, you can submit an account deletion request via email to our official contact at <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a> or visit our <a href="delete-account.html">Account Deletion page</a>.</li>
+      <li><strong>Course of Interest:</strong> The specific training program, AI workshop, or subject course you enquired about.</li>
+      <li><strong>Teaching Background & Preferences:</strong> Grade level taught, subjects handled, school type, language preferences, or professional learning goals submitted in enquiry forms.</li>
+      <li><strong>Enquiry Notes & Follow-up History:</strong> Records of questions asked, communication timestamps, and enrollment status.</li>
     </ul>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or requests regarding this Privacy Policy or your data, please contact us at:</p>
-    <p>
-      <strong>EduARTs Tech Team</strong><br>
-      Email: <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a><br>
-      Website: <a href="https://eduartstech.github.io/eduarts-ai/">https://eduartstech.github.io/eduarts-ai/</a>
-    </p>
+    <h3>C. Teacher OS Account & Profile Data</h3>
+    <ul>
+      <li><strong>Account Credentials:</strong> Email address and securely hashed password credentials (we never store plain-text passwords).</li>
+      <li><strong>Teaching Profile:</strong> School name, district, syllabus type, assigned classes (e.g., Class 1–10), subjects taught, and primary language of instruction.</li>
+      <li><strong>Curriculum & Timetable Data:</strong> Weekly timetable periods, custom lesson plans, teaching notes, handbook matching preferences, and classroom progress logs created by the teacher.</li>
+    </ul>
+
+    <h3>D. Usage, Technical & Security Data</h3>
+    <ul>
+      <li><strong>Session & Security Telemetry:</strong> Device name, operating system, IP address, sign-in timestamps, and session tokens to protect against unauthorized account access and enable multi-device session management.</li>
+      <li><strong>Web & App Usage Metrics:</strong> Pages viewed, course progress, lesson completion status, and referral sources, used to ensure reliable service delivery.</li>
+    </ul>
+
+    <!-- 3. Meta Lead Ads -->
+    <h2 id="section-meta-lead-ads">3. Meta (Facebook & Instagram) Lead Forms & Advertising</h2>
+    <p>EduARTs runs educational advertisements on Meta platforms (Facebook and Instagram). When you interact with our advertisements and submit your contact details via Meta Instant Lead Forms, you provide information directly to EduARTs.</p>
+
+    <div class="info-card">
+      <h3 style="margin-top:0; color:var(--primary);">How Meta Lead Form Data Is Used</h3>
+      <p>Information you submit through Meta lead forms (such as your <strong>Full Name</strong>, <strong>Phone Number</strong>, and <strong>Email Address</strong>) is collected and used by EduARTs specifically to:</p>
+      <ul>
+        <li><strong>Contact you directly</strong> regarding the specific course, AI training program, workshop, or educational service you enquired about.</li>
+        <li><strong>Provide registration and syllabus information</strong>, fee details, schedule options, and onboarding instructions.</li>
+        <li><strong>Send relevant follow-up communications</strong> to assist you with enrollment questions or batch timing selection.</li>
+        <li><strong>Communicate via Phone Calls or WhatsApp</strong> to provide fast, personalized assistance.</li>
+        <li><strong>Operate permitted automated messaging workflows</strong> (e.g., instant WhatsApp delivery of program brochures or confirmation of enquiry receipt).</li>
+        <li><strong>Provide customer support</strong> regarding your admission or educational queries.</li>
+      </ul>
+    </div>
+
+    <div class="success-card">
+      <strong>Zero Data Selling Commitment:</strong> EduARTs <strong>never sells, rents, trades, or leases</strong> your contact details or lead information to third parties or marketing brokers for their independent advertising purposes. Information collected via Meta lead forms is used strictly by EduARTs to deliver information and support for EduARTs educational programs.
+    </div>
+
+    <!-- 4. WhatsApp & Automated Messaging -->
+    <h2 id="section-whatsapp-messaging">4. WhatsApp Enquiries, Communication & Automated Messaging</h2>
+    <p>To provide prompt support to busy teachers and educators, EduARTs utilizes telephone and WhatsApp Business communication channels:</p>
+    <ul>
+      <li><strong>Enquiry Follow-Up:</strong> When you provide your phone number on a website form, course registration page, or Meta lead form, our academic counseling team may reach out to you via WhatsApp or phone call.</li>
+      <li><strong>Automated Reply Workflows:</strong> We may use automated reply systems to immediately deliver course brochures, syllabus PDFs, workshop webinar links, or confirmation receipts when you request information.</li>
+      <li><strong>Service Updates & Reminders:</strong> Registered students receive class reminders, schedule changes, and technical assistance via WhatsApp.</li>
+      <li><strong>Easy Opt-Out:</strong> You have full control over promotional communications. You may opt out of promotional WhatsApp messages at any time simply by replying <code>STOP</code> or <code>UNSUBSCRIBE</code> on WhatsApp, or by emailing us at <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a>.</li>
+    </ul>
+
+    <!-- 5. How We Use Information -->
+    <h2 id="section-how-we-use-information">5. How We Use Information</h2>
+    <p>Across our products and services, personal information is processed under the following lawful bases and for the following operational purposes:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Primary Purpose</th>
+          <th>Applicable Services</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Account & Authentication</strong></td>
+          <td>Create and secure teacher accounts, verify login credentials, and manage active sessions across devices.</td>
+          <td>EduARTs Teacher OS, EduARTs Academy</td>
+        </tr>
+        <tr>
+          <td><strong>Course Delivery & Education</strong></td>
+          <td>Enroll learners, deliver video/live lessons, track assignment submissions, and issue course completion certificates.</td>
+          <td>EduARTs Academy, AI Training Programs</td>
+        </tr>
+        <tr>
+          <td><strong>Enquiries & Consultation</strong></td>
+          <td>Answer curriculum questions, provide course counseling, and share registration materials.</td>
+          <td>Web Portals, Meta Lead Forms, WhatsApp</td>
+        </tr>
+        <tr>
+          <td><strong>Smart Teaching Assistance</strong></td>
+          <td>Synthesize customized lesson plans, pedagogical worksheets, and daily teaching reminders matching local curricula.</td>
+          <td>EduARTs Teacher OS</td>
+        </tr>
+        <tr>
+          <td><strong>Interactive Classroom Quizzes</strong></td>
+          <td>Submit student quiz attempts and display aggregate scores exclusively to the assigning teacher.</td>
+          <td>EduARTs Web Quizzes</td>
+        </tr>
+        <tr>
+          <td><strong>Customer Support & Operations</strong></td>
+          <td>Troubleshoot technical issues, process account deletion requests, and protect platform security.</td>
+          <td>All EduARTs Services</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 6. Payment Disclosures -->
+    <h2 id="section-payment-disclosures">6. Payment & Financial Information Disclosures</h2>
+    <p>EduARTs values your financial privacy and maintains strict security practices regarding paid courses and subscriptions:</p>
+
+    <div class="info-card">
+      <h3 style="margin-top:0; color:var(--primary);">Accurate Financial Handling Statement</h3>
+      <ul>
+        <li><strong>No Card or PIN Storage:</strong> EduARTs <strong>does NOT collect, store, or process</strong> credit card numbers, debit card numbers, CVVs, card expiry dates, net banking passwords, UPI PINs, bank account credentials, or one-time passwords (OTPs).</li>
+        <li><strong>Certified Third-Party Payment Gateways:</strong>
+          <ul>
+            <li><strong>Website & Academy Course Payments:</strong> Processed securely through certified third-party payment gateways, primarily <strong>Razorpay Software Private Limited</strong>, compliant with the highest industry security standard (PCI-DSS Level 1). Your payment details are encrypted and transmitted directly to the gateway.</li>
+            <li><strong>In-App Mobile Purchases & Subscriptions:</strong> Processed directly through <strong>Google Play Billing</strong> (Google LLC) under Google's secure payment infrastructure.</li>
+          </ul>
+        </li>
+        <li><strong>Data Maintained by EduARTs:</strong> EduARTs only receives and maintains non-sensitive transaction records necessary for accounting, course access, and customer verification:
+          <ul>
+            <li>Order ID and payment transaction reference ID</li>
+            <li>Amount paid and currency (e.g., INR ₹)</li>
+            <li>Date and time of payment</li>
+            <li>Payment status (e.g., SUCCESS, PENDING, FAILED)</li>
+            <li>Google Play purchase tokens (used solely to verify subscription entitlements)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 7. AI Safety -->
+    <h2 id="section-ai-safety">7. Artificial Intelligence & Data Safety (Google Gemini)</h2>
+    <p>EduARTs utilizes state-of-the-art generative AI (Google Gemini API) to generate lesson plans, worksheets, celebration posters, and classroom activities:</p>
+    <ul>
+      <li><strong>Curriculum Descriptors Only:</strong> Prompts transmitted to the AI engine contain academic syllabus topics, grade levels, subject areas, language mediums, and event descriptions.</li>
+      <li><strong>Strict Personal Data Isolation:</strong> <strong>Teacher personal information, user identities, student names, contact numbers, and lead form data are NEVER transmitted to external AI APIs.</strong></li>
+      <li><strong>No Public Model Training:</strong> We do not utilize your personal data or user-generated lesson notes to train public or foundational AI models.</li>
+    </ul>
+
+    <!-- 8. Student Data Isolation -->
+    <h2 id="section-student-data">8. Student Data Isolation & Classroom Quiz Disclosures</h2>
+    <p>EduARTs is primarily designed as a productivity and professional development tool for educators:</p>
+    <div class="callout">
+      <strong>Classroom Quiz Privacy:</strong> When an educator uses our shared interactive quiz feature, the web quiz interface collects only the student name, student grade/class, submitted answers, and score. This data is collected solely to record the student's attempt and make results visible to the assigning teacher. EduARTs does not collect student email addresses, phone numbers, home addresses, or advertising tracking identifiers.
+    </div>
+
+    <!-- 9. Service Providers -->
+    <h2 id="section-service-providers">9. Service Providers & Third-Party Processors</h2>
+    <p>We work with trusted third-party cloud infrastructure and technology providers to deliver our services. These providers process data strictly on our behalf under confidentiality and data protection obligations:</p>
+    <ul>
+      <li><strong>Cloud Hosting & Databases:</strong> Google Cloud Platform (Google LLC) — Cloud Run, Cloud SQL (PostgreSQL), and Firebase Hosting.</li>
+      <li><strong>Artificial Intelligence Services:</strong> Google Gemini API (Google LLC) for curriculum synthesis (subject to strict data isolation as detailed in Section 7).</li>
+      <li><strong>Payment Processors:</strong> Razorpay Software Private Limited (web payments) and Google Play Billing (Google LLC).</li>
+      <li><strong>Advertising & Lead Generation:</strong> Meta Platforms, Inc. and Meta Platforms Ireland Ltd. (lead forms and campaign measurement).</li>
+      <li><strong>Communication Infrastructure:</strong> WhatsApp Business API (Meta) and Google Workspace / Gmail for customer communications.</li>
+    </ul>
+
+    <!-- 10. Data Security & Storage -->
+    <h2 id="section-data-security-storage">10. Data Storage, Offline Caching & Technical Security</h2>
+    <p>We maintain comprehensive administrative and technical safeguards to protect your data:</p>
+    <ul>
+      <li><strong>Encryption in Transit:</strong> All communications between client applications, websites, and backend servers use industry-standard HTTPS / TLS encryption.</li>
+      <li><strong>Secure Credential Storage:</strong> Passwords are cryptographically hashed using modern salted hashing algorithms. Authentication tokens use secure storage APIs on mobile devices.</li>
+      <li><strong>Offline-First Caching:</strong> For EduARTs Teacher OS, local lesson plans and timetable caches are stored in the private application sandbox on your device and are never accessible to other applications.</li>
+      <li><strong>Access Controls:</strong> Administrative access to server infrastructure and lead records is restricted through strict multi-factor authentication and role-based permissions.</li>
+    </ul>
+
+    <!-- 11. Data Retention & Deletion -->
+    <h2 id="section-data-retention-deletion">11. Data Retention & Deletion Policy</h2>
+    <p>We retain personal information only as long as necessary to fulfill the purposes outlined in this policy:</p>
+    <ul>
+      <li><strong>Lead Form & Enquiry Data:</strong> Retained for the duration necessary to follow up on your enquiry, assist with course enrollment, and provide customer support, or until you request deletion.</li>
+      <li><strong>Active Teacher & Student Accounts:</strong> Maintained while your account remains active so you can access your courses, certificates, lesson notes, and timetables.</li>
+      <li><strong>Financial & Transaction Records:</strong> Retained for statutory periods mandated by applicable Indian tax, commercial, and financial accounting laws.</li>
+      <li><strong>Right to Request Deletion:</strong> Any individual who has submitted an enquiry, lead form, or created an account may request deletion of their data at any time by emailing <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a>.</li>
+    </ul>
+
+    <!-- 12. Account Deletion for Teacher OS -->
+    <h2 id="section-account-deletion">12. Account Deletion for EduARTs Teacher OS (In-App & Web)</h2>
+    <p>In full compliance with Google Play Developer Policies and data protection standards, educators registered with EduARTs Teacher OS have the absolute right to delete their accounts and personal data at any time.</p>
+
+    <div class="info-card">
+      <h3 style="margin-top:0; color:var(--primary);">Method A: In-App Account Deletion (Inside Teacher OS Mobile App)</h3>
+      <p>If you have the EduARTs Teacher OS app installed on your device:</p>
+      <ol>
+        <li>Open the <strong>EduARTs</strong> app and log in to your account.</li>
+        <li>Tap <strong>ക്രമീകരണങ്ങൾ (Settings)</strong> from the main navigation menu.</li>
+        <li>Scroll to the <strong>മറ്റുള്ളവ (Others)</strong> section and tap <strong>അക്കൗണ്ട് സുരക്ഷ (Account Security)</strong>.</li>
+        <li>Select <strong>Delete Account</strong> (highlighted in red).</li>
+        <li>Type <code>DELETE</code> in uppercase in the confirmation box.</li>
+        <li>Enter your account password to verify ownership.</li>
+        <li>Tap <strong>Delete Account</strong>.</li>
+      </ol>
+      <p><em>Immediate System Action:</em> The server verifies your password and confirmation text, records the deletion request, updates the account status to <code>PENDING_DELETION</code>, immediately revokes all active session tokens across all devices, blocks subsequent logins, and clears local user databases from your device.</p>
+    </div>
+
+    <div class="info-card">
+      <h3 style="margin-top:0; color:var(--primary);">Method B: External Web-Based Deletion Request (No App Required)</h3>
+      <p>If you have uninstalled the app, lost your device, or prefer web-based deletion:</p>
+      <ol>
+        <li>Visit our dedicated <a href="delete-account.html">Account Deletion Page (delete-account.html)</a>.</li>
+        <li>Alternatively, email our support team directly at: <a href="mailto:eduartstech@gmail.com?subject=Account%20Deletion%20Request%20-%20EduARTs">eduartstech@gmail.com</a>.</li>
+        <li>Use the subject line: <strong>Account Deletion Request - EduARTs</strong>.</li>
+        <li>Send the email from your registered EduARTs email address and include your full name and associated school name.</li>
+        <li>Our team will verify account ownership and process the deletion request.</li>
+      </ol>
+    </div>
+
+    <!-- 13. User Rights -->
+    <h2 id="section-user-rights">13. User Privacy Rights & Choices</h2>
+    <p>We respect your privacy rights and provide straightforward mechanisms to exercise them:</p>
+    <ul>
+      <li><strong>Access & Correction:</strong> You can view and update your profile, school information, and teaching preferences anytime within the Teacher OS settings or Academy dashboard.</li>
+      <li><strong>Marketing Opt-Out:</strong> You may opt out of receiving promotional communications or follow-up messages at any time by replying <code>STOP</code> on WhatsApp or emailing us.</li>
+      <li><strong>Data Portability & Erasure:</strong> You may request a summary of the personal data we hold or request erasure of your contact details by writing to our contact email.</li>
+      <li><strong>Consent Withdrawal:</strong> Where processing is based on your consent (such as submitting an enquiry lead form), you may withdraw your consent at any time without affecting past lawful processing.</li>
+    </ul>
+
+    <!-- 14. Contact & Grievance -->
+    <h2 id="section-contact">14. Grievance Officer & Contact Information</h2>
+    <p>If you have questions, feedback, or data privacy requests concerning this Master Privacy Policy, please contact our dedicated team:</p>
+
+    <div class="info-card">
+      <strong>EduARTs Tech Team & Grievance Contact</strong><br>
+      <strong>Email:</strong> <a href="mailto:eduartstech@gmail.com">eduartstech@gmail.com</a><br>
+      <strong>Official Legal Portal:</strong> <a href="https://eduartstech.github.io/eduarts-legal/privacy.html">https://eduartstech.github.io/eduarts-legal/privacy.html</a><br>
+      <strong>Account Deletion Page:</strong> <a href="delete-account.html">https://eduartstech.github.io/eduarts-legal/delete-account.html</a><br>
+      <strong>Websites:</strong> <a href="https://eduarts.tech">https://eduarts.tech</a> &bull; <a href="https://eduartstech.github.io/eduarts-ai/">https://eduartstech.github.io/eduarts-ai/</a><br>
+      <strong>Jurisdiction:</strong> Kerala, India
+    </div>
 
     <footer>
       <p>
         <a href="privacy.html">Privacy Policy</a> &bull;
         <a href="delete-account.html">Account Deletion</a> &bull;
+        <a href="https://eduarts.tech">EduARTs Academy</a> &bull;
         <a href="https://eduartstech.github.io/eduarts-ai/">EduARTs Portal</a>
       </p>
       <p>&copy; 2026 EduARTs Tech. All rights reserved.</p>
